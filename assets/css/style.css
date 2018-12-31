@@ -1,0 +1,46 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch
+}
+
+#sidebar {
+  position: fixed;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100vh;
+  background: #222628;
+  color: #9a9c9d;
+  transition: all 0.3s;
+}
+/* hide the side bar */
+#sidebar.active {
+  margin-left: -245px;
+}
+
+#profile-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+/* Make the img small */
+#profile-img.active {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
+
+/* when viewing on mobile */
+@media (max-width: 768px) {
+  #sidebar {
+      margin-left: -245px;
+  }
+  /* show the side bar */
+  #sidebar.active {
+      margin-left:0;
+  }
+}
