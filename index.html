@@ -18,6 +18,7 @@
 
   <!-- My CSS -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/sidebar.css" />
 
   <!-- Scrollbar Custom CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
@@ -25,86 +26,119 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Averia+Sans+Libre|Quicksand|Source+Sans+Pro" rel="stylesheet">
 </head>
 
+<!-- ######################################################################################################################################################### -->
+
 <body>
-  <div id="wrapper">
-    <!-- Sidebar -->
-    <div id="sidebar" class="">
-      <!-- Sidebar Toggle -->
-      <div class="d-flex justify-content-end">
-        <div class="container-fluid pt-3">
-          <h4 id="profile-name">Darren Victoriano</h4>
+  <!-- this is the main container for the entire sidebar -->
+  <div id="sidebar-header">
+    <!-- Top Part -->
+    <div id="sidebar-top">
+      <!-- Small Sidebar Profile Top -->
+      <div id="sidebar-profile">
+        <!-- Sidebar Toggle -->
+        <div class="d-flex justify-content-end">
+          <div class="container-fluid pt-3 pr-0 pl-2 text-left">
+            <h4 id="profile-name">Darren Victoriano</h4>
+          </div>
+          <!-- Toggle button -->
+          <nav class="navbar navbar-expand-lg navbar-light pr-0">
+            <div class="container-fluid pr-2">
+
+              <button type="button" id="sidebarCollapse" class="btn btn-light">
+                <i class="fas fa-bars"></i>
+              </button>
+
+            </div>
+          </nav>
         </div>
-        <!-- Toggle button -->
-        <nav class="navbar navbar-expand-lg navbar-light pr-0">
-          <div class="container-fluid pr-2">
-
-            <button type="button" id="sidebarCollapse" class="btn btn-light">
-              <i class="fas fa-bars"></i>
-            </button>
-
-          </div>
-        </nav>
-      </div>
-      <!-- Sidebar header -->
-      <div id="sidebar-header" class="row m-0 p-0 mt-1">
-        <div class="row w-100 m-0 p-0">
-          <!-- My Name and Job Position-->
-          <div class="col-6 text-right pr-0">
-            <p id="profile-description" class="font-italic">
-              Software Quality Assurance Engineer
-            </p>
-          </div>
-          <!-- My img-->
-          <div id="profile-img-div" class="col-6">
-            <img id="profile-img" src="./assets/images/me.jpg">
+        <!-- Sidebar job -->
+        <div id="sidebar-job" class="row m-0 p-0 mt-1">
+          <div class="row w-100 m-0 p-0">
+            <!-- My Name and Job Position-->
+            <div class="col-6 text-right pr-0">
+              <p id="profile-description" class="font-italic">
+                Experienced SQA Engineer and a passionate programmer.
+              </p>
+            </div>
+            <!-- My img-->
+            <div id="profile-img-div" class="col-6 text-left">
+              <img id="profile-img" src="./assets/images/me.jpg">
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Sidebar Navlinks -->
-      <div id="navlink-div">
-        <ul class="list-unstyled components">
+      </div>
+      <!-- Sidebar Navigation -->
+      <div id="sidebar-nav">
+        <ul class="navigation">
           <li>
-            <a href="#">Home</a>
+            <a href="#home" id="home-link">
+              <div class="fas fa-home nav-link-icon"></div>
+              <span class="nav-link-text">Home</span>
+            </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about" id="about-link">
+              <div class="fas fa-user-tie nav-link-icon"></div>
+              <span class="nav-link-text">About</span>
+            </a>
           </li>
           <li>
-            <a href="#">Project</a>
+            <a href="#projects" id="projects-link">
+              <div class="fas fa-th-list nav-link-icon"></div>
+              <span class="nav-link-text">Projects</span>
+            </a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills" id="skills-link">
+              <div class="fas fa-tools nav-link-icon"></div>
+              <span class="nav-link-text">Skills</span>
+            </a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact" id="contact-link">
+              <div class="fas fa-envelope nav-link-icon"></div>
+              <span class="nav-link-text">Contact</span>
+            </a>
           </li>
         </ul>
-      </div>
-    </div>
-
-    <!-- Main Body -->
-    <div id="main-body" class="container-fluid text-center">
-
-
-
-      <!-- Body Content -->
-      <div class="row">
-        <div class="col-md-12">
-          <p class="">Hello World</p>
-        </div>
 
       </div>
+    </div> <!-- End of sidebar-top -->
 
-
-
+    <!-- Bottom Part -->
+    <div id="sidebar-bottom">
+      <ul class="list-inline text-center">
+        <li data-toggle="tooltip" data-placement="top" title="Github">
+          <a target="_blank" href="#">
+            <img class="social-img" src="./assets/images/github.png">
+          </a>
+        </li>
+        <li data-toggle="tooltip" data-placement="top" title="Stack overflow">
+          <a target="_blank" href="#">
+            <img class="social-img" src="./assets/images/stackoverflow-black-circle.png">
+          </a>
+        </li>
+        <li data-toggle="tooltip" data-placement="top" title="Linkedin">
+          <a target="_blank" href="#">
+            <img class="social-img" src="./assets/images/linkedin.png">
+          </a>
+        </li>
+      </ul>
     </div>
+  </div> <!-- End of sidebar div -->
 
-  </div>
+  <!-- ######################################################################################################################################################### -->
 
+  <!-- Main Container -->
+  <div id="main-container">
+
+  </div> <!-- end of main-container -->
+
+  <!-- ######################################################################################################################################################### -->
   <!-- JavaScript -->
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="

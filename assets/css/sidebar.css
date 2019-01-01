@@ -1,0 +1,111 @@
+/*
+Sidebar CSS ------------------
+*/
+#sidebar-header {
+    background: #222629;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 300px;
+}
+
+/* Sidebar Top */
+#profile-name {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1.7em;
+}
+
+#sidebarCollapse {
+    /* show this when toggled */
+    display: block;
+}
+
+#sidebar-profile {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+#profile-description {
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#profile-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 15%;
+    border: solid 1px white;
+  }
+
+/* Sidebar Navigations */
+#sidebar-nav ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17pt;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#sidebar-nav ul li a {
+    border: 0;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    outline: 0;
+    padding: 0.5em 3em 0.5em 3em;
+    text-decoration: none;
+    transition: none;
+}
+
+#sidebar-nav ul li a.active {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+    color: #fff;
+}
+
+#sidebar-nav ul li a div {
+    float: left;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+#sidebar-nav ul li a.active div {
+    color: #e6e6e6;
+}
+/* Sidebar Bottom */
+#sidebar-bottom ul li {
+    display: inline-block;
+}
+
+.social-img {
+    width: 40px;
+    height: 40px;
+    background-color: #333333;
+    border: solid 2px grey;
+    border-radius: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-img:hover,
+.social-img:focus {
+    border: solid 2px white;
+}
+
+.nav-link-text {
+    
+}
+
+.nav-link-icon {
+    
+}
+
+/*
+Main Body CSS ------------------
+*/
