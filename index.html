@@ -31,7 +31,7 @@
 
 <body>
   <!-- this is the main container for the entire sidebar -->
-  <div id="sidebar">
+  <div id="sidebar-header">
     <!-- Top Part -->
     <div id="sidebar-top">
       <!-- Small Sidebar Profile -->
@@ -39,7 +39,7 @@
 
         <!-- Sidebar Toggle -->
         <div class="d-flex justify-content-end">
-          <div class="container-fluid pt-3">
+          <div class="container-fluid pt-3 text-left">
             <h4 id="profile-name">Darren Victoriano</h4>
           </div>
           <!-- Toggle button -->
@@ -53,8 +53,8 @@
             </div>
           </nav>
         </div>
-        <!-- Sidebar header -->
-        <div id="sidebar-header" class="row m-0 p-0 mt-1">
+        <!-- Sidebar job -->
+        <div id="sidebar-job" class="row m-0 p-0 mt-1">
           <div class="row w-100 m-0 p-0">
             <!-- My Name and Job Position-->
             <div class="col-6 text-right pr-0">
@@ -85,17 +85,17 @@
           </li>
           <li>
             <a href="#projects" id="projects-link">
-              <div class="fas fa-home"></div>Projects
+              <div class="fas fa-th-list"></div>Projects
             </a>
           </li>
           <li>
             <a href="#skills" id="skills-link">
-              <div class="fas fa-home"></div>Skills
+              <div class="fas fa-tools"></div>Skills
             </a>
           </li>
           <li>
             <a href="#contact" id="contact-link">
-              <div class="fas fa-home"></div>Contact
+              <div class="fas fa-envelope"></div>Contact
             </a>
           </li>
         </ul>
@@ -105,17 +105,21 @@
 
     <!-- Bottom Part -->
     <div id="sidebar-bottom">
-      <ul class="list-inline">
+      <ul class="list-inline text-center">
         <li data-toggle="tooltip" data-placement="top" title="Github">
-          <a target="_blank" href="https://github.com/radhika-sivarajan"><img class="btn-social social-github" src="assets/images/Github.png"></a>
+          <a target="_blank" href="#">
+            <img class="social-img" src="./assets/images/github.png">
+          </a>
         </li>
         <li data-toggle="tooltip" data-placement="top" title="Stack overflow">
-          <a target="_blank" href="http://stackoverflow.com/users/7359885/radhika"><img class="btn-social social-stackoverflow"
-              src="assets/images/Stackoverflow-light.png"></a>
+          <a target="_blank" href="#">
+            <img class="social-img" src="./assets/images/stackoverflow.png">
+          </a>
         </li>
         <li data-toggle="tooltip" data-placement="top" title="Linkedin">
-          <a target="_blank" href="https://www.linkedin.com/in/radhika-sivarajan"><img class="btn-social social-linkedin"
-              src="assets/images/Linkedin.png"></a>
+          <a target="_blank" href="#">
+            <img class="social-img" src="./assets/images/linkedin.png">
+          </a>
         </li>
       </ul>
     </div>

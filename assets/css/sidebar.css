@@ -1,7 +1,7 @@
 /*
 Sidebar CSS only
 */
-#sidebar {
+#sidebar-header {
     background: #222629;
     color: #fff;
     display: flex;
@@ -55,9 +55,21 @@ Sidebar CSS only
 #sidebar-nav ul li a div {
     float: left;
     padding-top: 5px;
+    margin-left: 20px;
 }
 
 #sidebar-nav ul li a.active div {
-    color: #e2b2ec;
+    color: #e6e6e6;
 }
 /* Sidebar Bottom */
+#sidebar-bottom ul li {
+    display: inline-block;
+}
+
+.social-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 1em;
+    margin-right: 1em;
+    transition: all 0.3s ease-in-out;
+}
