@@ -17,6 +17,11 @@ Sidebar CSS only
 }
 
 /* Sidebar Top */
+#sidebarCollapse {
+    /* show this when toggled */
+    display: none;
+}
+
 #sidebar-profile {
     position: relative;
     margin-bottom: 1em;
@@ -69,7 +74,15 @@ Sidebar CSS only
 .social-img {
     width: 40px;
     height: 40px;
+    background-color: #333333;
+    border: solid 2px grey;
+    border-radius: 100%;
     margin-left: 1em;
     margin-right: 1em;
     transition: all 0.3s ease-in-out;
+}
+
+.social-img:hover,
+.social-img:focus {
+    border: solid 2px white;
 }
