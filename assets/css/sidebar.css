@@ -1,5 +1,5 @@
 /*
-Sidebar CSS only
+Sidebar CSS ------------------
 */
 #sidebar-header {
     background: #222629;
@@ -17,9 +17,14 @@ Sidebar CSS only
 }
 
 /* Sidebar Top */
+#profile-name {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1.7em;
+}
+
 #sidebarCollapse {
     /* show this when toggled */
-    display: none;
+    display: block;
 }
 
 #sidebar-profile {
@@ -27,15 +32,21 @@ Sidebar CSS only
     margin-bottom: 1em;
 }
 
+#profile-description {
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 #profile-img {
     height: 80px;
     width: 80px;
-    border-radius: 50%;
+    border-radius: 15%;
+    border: solid 1px white;
   }
 
 /* Sidebar Navigations */
 #sidebar-nav ul {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 17pt;
     list-style-type: none;
     padding-left: 0;
@@ -86,3 +97,15 @@ Sidebar CSS only
 .social-img:focus {
     border: solid 2px white;
 }
+
+.nav-link-text {
+    
+}
+
+.nav-link-icon {
+    
+}
+
+/*
+Main Body CSS ------------------
+*/
