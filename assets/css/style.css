@@ -181,7 +181,7 @@ Media CSS ------------------
       margin-top: 10px;
       transition: all 0.3s ease-in-out;
   }
-  /* sidebar and cmain-container DIV */
+  /* sidebar and main-container DIV */
   #sidebar-header {
       transition: width 0.5s linear;
       width: 55px;
@@ -230,4 +230,4 @@ Media CSS ------------------
     opacity: 0.2;
   }
 
-} /* Media 960px */
+} /* End of Media 960px */
