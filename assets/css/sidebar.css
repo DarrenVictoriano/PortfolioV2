@@ -1,4 +1,23 @@
 /*
+Global Styles CSS
+*/
+.averia-cursive-font {
+    font-family: 'Averia Sans Libre', cursive;
+  }
+  
+  .quicksand-font {
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .alegreya-font {
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  
+  .source-pro-font {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+/*
 Sidebar CSS ------------------
 */
 #sidebar-header {
@@ -110,8 +129,24 @@ Sidebar CSS ------------------
 }
 
 /*
-Main Body CSS ------------------
+Main Content CSS
 */
+#main-container {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin-left: 300px;
+  /* margin-bottom: -20px;
+  margin-top: -20px; */
+  transition: all 0.5s ease;
+}
+
+#home {
+  background-image: url('../images/banner-mountain.png');
+  background-size: cover;
+  color: white;
+  padding: 18% 2%;
+}
 
 /*
 Media CSS ------------------
