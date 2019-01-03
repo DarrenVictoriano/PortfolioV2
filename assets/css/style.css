@@ -120,32 +120,22 @@ Sidebar CSS ------------------
   border: solid 2px white;
 }
 
-.nav-link-text {
-  /* hide the text when sidebar is hidden */
-}
-
-.nav-link-icon {
-  /* resize the icon when the sidebar is hidden */
-}
-
 /*
 Main Content CSS
 */
 #main-container {
-font-family: 'Quicksand', sans-serif;
-font-size: 20px;
-padding: 0;
-margin-left: 300px;
-/* margin-bottom: -20px;
-margin-top: -20px; */
-transition: all 0.5s ease;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin-left: 300px;
+  transition: all 0.5s ease;
 }
 
 #home {
-background-image: url('../images/banner-mountain.png');
-background-size: cover;
-color: white;
-padding: 18% 2%;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../images/banner-mountain.png');
+  background-size: cover;
+  padding: 18% 2%;
 }
 
 /*
@@ -191,7 +181,7 @@ Media CSS ------------------
       margin-top: 10px;
       transition: all 0.3s ease-in-out;
   }
-  /* sidebar and cmain-container DIV */
+  /* sidebar and main-container DIV */
   #sidebar-header {
       transition: width 0.5s linear;
       width: 55px;
@@ -230,7 +220,14 @@ Media CSS ------------------
       width: 300px;
   }
   #main-container.toggled {
-      margin-left: 300px;
+    margin-left: 300px;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+  }
+  /* Dimmer */
+  #home.toggled {
+    opacity: 0.2;
   }
 
-} /* Media 960px */
+} /* End of Media 960px */
