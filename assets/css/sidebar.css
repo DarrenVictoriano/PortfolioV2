@@ -51,6 +51,9 @@ Sidebar CSS ------------------
     list-style-type: none;
     padding-left: 0;
 }
+#sidebar-nav ul li {
+    min-height: 2em;
+}
 
 #sidebar-nav ul li a {
     border: 0;
@@ -68,7 +71,7 @@ Sidebar CSS ------------------
     color: #fff;
 }
 
-#sidebar-nav ul li a div {
+.nav-link-icon {
     float: left;
     padding-top: 5px;
     margin-left: 20px;
@@ -123,6 +126,7 @@ Media CSS ------------------
     #profile-img-div {
         padding:0;
         margin: auto;
+        margin-bottom: 1em;
     }
     #profile-img {
         height: 40px;
@@ -134,7 +138,18 @@ Media CSS ------------------
         display: block;
     }
     /* Navigation Link */
-
+    #sidebar-nav ul li a {
+        padding: 0;
+    }
+    .nav-link-text {
+        display: none;
+    }
+    .nav-link-icon {
+        float: right;
+        margin: 0;
+        margin-right: 15px;
+        padding: 0;
+    }
     /* Social Image */
     .social-img {
         margin: auto;
@@ -162,6 +177,18 @@ Media CSS ------------------
         height: 80px;
         width: 80px;
         transition: all 0.5s linear;
+    }
+    /* Navigation Link */
+    #sidebar-nav ul li a.toggled {
+        padding: 0.5em 3em 0.5em 3em;
+    }
+    .nav-link-text.toggled {
+        display: block;
+    }
+    .nav-link-icon.toggled {
+        float: left;
+        padding-top: 5px;
+        margin-left: 20px;
     }
     /* Sidebar and main container DIV */
     #sidebar-header.toggled {

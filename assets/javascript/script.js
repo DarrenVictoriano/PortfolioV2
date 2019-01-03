@@ -6,7 +6,6 @@ function checkSize() {
 
 
   }
-  console.log(x)
 }
 
 function clickCollapseButton(e) {
@@ -18,6 +17,9 @@ function clickCollapseButton(e) {
   // add class to NavLink when viewport is small
   $('a[href^="#"]').toggleClass('nav-link-close');
 
+  // show profile texts
+  $('#profile-name').toggle();
+  $('#profile-description').toggle();
 
   // make profile pic big again
   $('#profile-img-div').toggleClass("toggled");
@@ -26,9 +28,11 @@ function clickCollapseButton(e) {
   // re-center social media icons
   $('.social-img').toggleClass('toggled-social');
 
-  // show profile texts
-  $('#profile-name').toggle();
-  $('#profile-description').toggle();
+  // reset nav link text and nav link icon
+  $('.nav-link-text').toggleClass('toggled');
+  $('.nav-link-icon').toggleClass('toggled');
+  $('a[href^="#"]').toggleClass('toggled');
+
 }
 
 function onScroll(event) {
