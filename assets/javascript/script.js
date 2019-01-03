@@ -13,6 +13,11 @@ function clickCollapseButton(e) {
   //show sidebar
   $("#sidebar-header").toggleClass("toggled");
   $("#main-container").toggleClass("toggled");
+  $('#main-container-dimmer').toggleClass("toggled");
+
+  // Dim Overlay
+  $('#home').toggleClass("toggled");
+  $('#dimmer').toggleClass("toggled");
 
   // add class to NavLink when viewport is small
   $('a[href^="#"]').toggleClass('nav-link-close');
