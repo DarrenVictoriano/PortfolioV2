@@ -24,7 +24,7 @@ Sidebar CSS ------------------
 
 #sidebarCollapse {
     /* show this when toggled */
-    display: block;
+    display: none;
 }
 
 #sidebar-profile {
@@ -51,6 +51,9 @@ Sidebar CSS ------------------
     list-style-type: none;
     padding-left: 0;
 }
+#sidebar-nav ul li {
+    min-height: 2em;
+}
 
 #sidebar-nav ul li a {
     border: 0;
@@ -68,7 +71,7 @@ Sidebar CSS ------------------
     color: #fff;
 }
 
-#sidebar-nav ul li a div {
+.nav-link-icon {
     float: left;
     padding-top: 5px;
     margin-left: 20px;
@@ -99,13 +102,100 @@ Sidebar CSS ------------------
 }
 
 .nav-link-text {
-    
+    /* hide the text when sidebar is hidden */
 }
 
 .nav-link-icon {
-    
+    /* resize the icon when the sidebar is hidden */
 }
 
 /*
 Main Body CSS ------------------
 */
+
+/*
+Media CSS ------------------
+*/
+
+@media screen and (max-width: 960px) {
+    /* Sidebar Header */
+    #profile-name,
+    #profile-description {
+        display: none;
+    }
+    #profile-img-div {
+        padding:0;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    #profile-img {
+        height: 40px;
+        width: 40px;
+        transition: all 0.5s linear;
+    }
+    /* Collape Icon */
+    #sidebarCollapse {
+        display: block;
+    }
+    /* Navigation Link */
+    #sidebar-nav ul li a {
+        padding: 0;
+    }
+    .nav-link-text {
+        display: none;
+    }
+    .nav-link-icon {
+        float: right;
+        margin: 0;
+        margin-right: 15px;
+        padding: 0;
+    }
+    /* Social Image */
+    .social-img {
+        margin: auto;
+        margin-top: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    /* sidebar and cmain-container DIV */
+    #sidebar-header {
+        transition: width 0.5s linear;
+        width: 55px;
+    }
+    #main-container {
+        font-size: 18px;
+        margin-left: 55px;
+        transition: all 0.5s linear;
+    }
+
+    /* ---------- toggled class ---------- */
+    /* Sidebar Header */
+    #profile-img-div.toggled {
+        padding:0;
+        margin: 0;
+    }
+    #profile-img.toggled {
+        height: 80px;
+        width: 80px;
+        transition: all 0.5s linear;
+    }
+    /* Navigation Link */
+    #sidebar-nav ul li a.toggled {
+        padding: 0.5em 3em 0.5em 3em;
+    }
+    .nav-link-text.toggled {
+        display: block;
+    }
+    .nav-link-icon.toggled {
+        float: left;
+        padding-top: 5px;
+        margin-left: 20px;
+    }
+    /* Sidebar and main container DIV */
+    #sidebar-header.toggled {
+        width: 300px;
+    }
+    #main-container.toggled {
+        margin-left: 300px;
+    }
+
+}
