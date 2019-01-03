@@ -24,7 +24,7 @@ Sidebar CSS ------------------
 
 #sidebarCollapse {
     /* show this when toggled */
-    display: block;
+    display: none;
 }
 
 #sidebar-profile {
@@ -99,13 +99,76 @@ Sidebar CSS ------------------
 }
 
 .nav-link-text {
-    
+    /* hide the text when sidebar is hidden */
 }
 
 .nav-link-icon {
-    
+    /* resize the icon when the sidebar is hidden */
 }
 
 /*
 Main Body CSS ------------------
 */
+
+/*
+Media CSS ------------------
+*/
+
+@media screen and (max-width: 960px) {
+    /* Sidebar Header */
+    #profile-name,
+    #profile-description {
+        display: none;
+    }
+    #profile-img-div {
+        padding:0;
+        margin: auto;
+    }
+    #profile-img {
+        height: 40px;
+        width: 40px;
+        transition: all 0.5s linear;
+    }
+    /* Collape Icon */
+    #sidebarCollapse {
+        display: block;
+    }
+    /* Navigation Link */
+
+    /* Social Image */
+    .social-img {
+        margin: auto;
+        margin-top: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    /* sidebar and cmain-container DIV */
+    #sidebar-header {
+        transition: width 0.5s linear;
+        width: 55px;
+    }
+    #main-container {
+        font-size: 18px;
+        margin-left: 55px;
+        transition: all 0.5s linear;
+    }
+
+    /* ---------- toggled class ---------- */
+    /* Sidebar Header */
+    #profile-img-div.toggled {
+        padding:0;
+        margin: 0;
+    }
+    #profile-img.toggled {
+        height: 80px;
+        width: 80px;
+        transition: all 0.5s linear;
+    }
+    /* Sidebar and main container DIV */
+    #sidebar-header.toggled {
+        width: 300px;
+    }
+    #main-container.toggled {
+        margin-left: 300px;
+    }
+
+}

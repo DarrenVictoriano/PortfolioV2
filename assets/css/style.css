@@ -20,3 +20,19 @@ Global Styles CSS
 /*
 Main Content CSS
 */
+#main-container {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin-left: 300px;
+  /* margin-bottom: -20px;
+  margin-top: -20px; */
+  transition: all 0.5s ease;
+}
+
+#home {
+  background-image: url('../images/banner-mountain.png');
+  background-size: cover;
+  color: white;
+  padding: 18% 2%;
+}
