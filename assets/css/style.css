@@ -231,3 +231,55 @@ Media CSS ------------------
   }
 
 } /* End of Media 960px */
+
+@media screen and (max-width: 500px) {
+  
+  #main-container {
+      font-size: 14px;
+  }
+  #profile-name {
+    font-size: 16px;
+  }
+  #profile-description {
+    font-size: 9px;
+  }
+
+  /* ---------- toggled class ---------- */
+  /* Sidebar Header */
+  #profile-img-div.toggled {
+      padding:0;
+      margin: 0;
+  }
+  #profile-img.toggled {
+      height: 50px;
+      width: 50px;
+      transition: all 0.5s linear;
+  }
+  /* Navigation Link */
+  #sidebar-nav ul li a.toggled {
+      padding: 0.5em 3em 0.5em 3em;
+      font-size: 15px;
+  }
+  .nav-link-text.toggled {
+      display: block;
+  }
+  .nav-link-icon.toggled {
+      float: left;
+      padding-top: 5px;
+      margin-left: 20px;
+  }
+  /* Sidebar and main container DIV */
+  #sidebar-header.toggled {
+      width: 200px;
+  }
+  #main-container.toggled {
+    margin-left: 200px;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+  }
+  /* Dimmer */
+  #home.toggled {
+    opacity: 0.2;
+  }
+}
