@@ -1,6 +1,9 @@
 /*
 Global Styles CSS
 */
+body {
+  background: #222629;
+}
 .averia-cursive-font {
   font-family: 'Averia Sans Libre', cursive;
 }
@@ -79,7 +82,7 @@ Sidebar CSS ------------------
   color: rgba(255, 255, 255, 0.5);
   display: block;
   outline: 0;
-  padding: 0.5em 3em 0.5em 3em;
+  padding: 0.5em 1.5em 0.5em 1.5em;
   text-decoration: none;
   transition: none;
 }
@@ -93,7 +96,7 @@ Sidebar CSS ------------------
 .nav-link-icon {
   float: left;
   padding-top: 5px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 #sidebar-nav ul li a.active div {
@@ -136,6 +139,29 @@ Main Content CSS
   background-image: url('../images/banner-mountain.png');
   background-size: cover;
   padding: 18% 2%;
+}
+
+#about {
+  background-color: #ffffff;
+}
+
+#projects {
+  background-color: #eeeeee;
+}
+
+#skills {
+  background-color: #ffffff;
+}
+
+#contact {
+  background-color: #eeeeee;
+}
+
+#footer {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../images/banner-mountain-foot.png');
+  background-size: cover;
+  color: #ffffff;
 }
 
 /*
@@ -205,7 +231,7 @@ Media CSS ------------------
   }
   /* Navigation Link */
   #sidebar-nav ul li a.toggled {
-      padding: 0.5em 3em 0.5em 3em;
+      padding: 0.5em 1.5em 0.5em 1.5em;
   }
   .nav-link-text.toggled {
       display: block;
@@ -222,11 +248,28 @@ Media CSS ------------------
   #main-container.toggled {
     margin-left: 300px;
     transition: all 0.5s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 998;
   }
   /* Dimmer */
   #home.toggled {
+    opacity: 0.2;
+  }
+  #about.toggled {
+    opacity: 0.2;
+  }
+  
+  #projects.toggled {
+    opacity: 0.2;
+  }
+  
+  #skills.toggled {
+    opacity: 0.2;
+  }
+  
+  #contact.toggled {
+    opacity: 0.2;
+  }
+  
+  #footer.toggled {
     opacity: 0.2;
   }
 
@@ -257,7 +300,7 @@ Media CSS ------------------
   }
   /* Navigation Link */
   #sidebar-nav ul li a.toggled {
-      padding: 0.5em 3em 0.5em 3em;
+      padding: 0.5em 1.5em 0.5em 1.5em;
       font-size: 15px;
   }
   .nav-link-text.toggled {
