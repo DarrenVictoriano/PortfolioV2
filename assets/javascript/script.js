@@ -78,8 +78,8 @@ function clickNavLink(e) {
 // start JS
 $(document).ready(function () {
 
-  // run test on window resize
-  $(window).resize(checkSize);
+  // reload page on window resize
+  $(window).on('resize', function () { location.reload(); });
 
   // Collapse Button
   $('#sidebarCollapse').on('click', clickCollapseButton);
