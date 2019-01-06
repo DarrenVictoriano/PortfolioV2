@@ -17,7 +17,12 @@ function clickCollapseButton(e) {
 
   // Dim Overlay
   $('#home').toggleClass("toggled");
-  $('#dimmer').toggleClass("toggled");
+  $('#about').toggleClass("toggled");
+  $('#projects').toggleClass("toggled");
+  $('#skills').toggleClass("toggled");
+  $('#contact').toggleClass("toggled");
+  $('#footer').toggleClass("toggled");
+
 
   // add class to NavLink when viewport is small
   $('a[href^="#"]').toggleClass('nav-link-close');
