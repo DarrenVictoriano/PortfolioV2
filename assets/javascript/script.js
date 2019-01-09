@@ -24,8 +24,9 @@ function clickCollapseButton(e) {
   $('#footer').toggleClass("toggled");
 
 
-  // add class to NavLink when viewport is small
+  // add class to NavLink when viewport is small so it closes the sidebar
   $('a[href^="#"]').toggleClass('nav-link-close');
+  $('#main-container').toggleClass('nav-link-close');
 
   // show profile texts
   $('#profile-name').toggle();
