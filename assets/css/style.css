@@ -262,6 +262,9 @@ Media CSS ------------------
   #home.toggled {
     opacity: 0.2;
   }
+  #home2.toggled {
+    opacity: 0.2;
+  }
   #about.toggled {
     opacity: 0.2;
   }

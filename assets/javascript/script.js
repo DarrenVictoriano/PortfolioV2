@@ -17,6 +17,7 @@ function clickCollapseButton(e) {
 
   // Dim Overlay
   $('#home').toggleClass("toggled");
+  $('#home2').toggleClass("toggled");
   $('#about').toggleClass("toggled");
   $('#projects').toggleClass("toggled");
   $('#skills').toggleClass("toggled");
