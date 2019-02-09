@@ -94,9 +94,9 @@ Sidebar CSS ------------------
 }
 
 .nav-link-icon {
-  float: left;
+  float: right;
   padding-top: 5px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 #sidebar-nav ul li a.active div {
@@ -139,6 +139,15 @@ Main Content CSS
   background-image: url('../images/banner-mountain.png');
   background-size: cover;
   padding: 18% 2%;
+}
+
+#home2 {
+  background-color: #ffffff;
+  padding-top: 80px;
+}
+
+#home2-name {
+  font-size: 3em;
 }
 
 #about {
@@ -237,7 +246,7 @@ Media CSS ------------------
       display: block;
   }
   .nav-link-icon.toggled {
-      float: left;
+      float: right;
       padding-top: 5px;
       margin-left: 20px;
   }
