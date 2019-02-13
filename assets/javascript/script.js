@@ -85,6 +85,15 @@ function clickNavLink(e) {
 // start JS
 $(document).ready(function () {
 
+  $('#fullpage').fullpage({
+    //options here
+    autoScrolling: false,
+    scrollHorizontally: false
+  });
+
+  //methods
+  $.fn.fullpage.setAllowScrolling(true);
+
   // reload page on window resize
   // $(window).on('resize', function () { location.reload(); });
 

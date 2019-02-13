@@ -126,7 +126,7 @@ Sidebar CSS ------------------
 /*
 Main Content CSS
 */
-#main-container {
+#fullpage {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   padding: 0;
@@ -217,12 +217,12 @@ Media CSS ------------------
       margin-top: 10px;
       transition: all 0.3s ease-in-out;
   }
-  /* sidebar and main-container DIV */
+  /* sidebar and fullpage DIV */
   #sidebar-header {
       transition: width 0.5s linear;
       width: 55px;
   }
-  #main-container {
+  #fullpage {
       font-size: 18px;
       margin-left: 55px;
       transition: all 0.5s linear;
@@ -255,7 +255,7 @@ Media CSS ------------------
   #sidebar-header.toggled {
       width: 300px;
   }
-  #main-container.toggled {
+  #fullpage.toggled {
     margin-left: 300px;
     transition: all 0.5s ease-in-out;
   }
@@ -290,7 +290,7 @@ Media CSS ------------------
 
 @media screen and (max-width: 500px) {
   
-  #main-container {
+  #fullpage {
       font-size: 14px;
   }
   #profile-name {
@@ -328,7 +328,7 @@ Media CSS ------------------
   #sidebar-header.toggled {
       width: 200px;
   }
-  #main-container.toggled {
+  #fullpage.toggled {
     margin-left: 200px;
     transition: all 0.5s ease-in-out;
     background-color: rgba(0, 0, 0, 0.8);
