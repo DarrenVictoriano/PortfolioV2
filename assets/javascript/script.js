@@ -52,7 +52,7 @@ function onScroll(event) {
   $('#sidebar-nav ul li a').each(function () {
     var currLink = $(this);
     var refElement = $(currLink.attr("href"));
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() >= scrollPos) {
       $('#sidebar-nav ul li a').removeClass("active");
       currLink.addClass("active");
     }
@@ -85,14 +85,13 @@ function clickNavLink(e) {
 // start JS
 $(document).ready(function () {
 
-  $('#fullpage').fullpage({
-    //options here
+  new fullpage('#fullpage', {
+    anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
     autoScrolling: false,
-    scrollHorizontally: false
+    scrollHorizontally: false,
+    css3: true,
   });
 
-  //methods
-  $.fn.fullpage.setAllowScrolling(true);
 
   // reload page on window resize
   // $(window).on('resize', function () { location.reload(); });
