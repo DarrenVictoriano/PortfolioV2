@@ -12,7 +12,7 @@ function clickCollapseButton(e) {
   e.preventDefault();
   //show sidebar
   $("#sidebar-header").toggleClass("toggled");
-  $("#main-container").toggleClass("toggled");
+  $("#fullpage").toggleClass("toggled");
   $('#main-container-dimmer').toggleClass("toggled");
 
   // Dim Overlay
@@ -27,7 +27,7 @@ function clickCollapseButton(e) {
 
   // add class to NavLink when viewport is small so it closes the sidebar
   $('a[href^="#"]').toggleClass('nav-link-close');
-  $('#main-container').toggleClass('nav-link-close');
+  $('#fullpage').toggleClass('nav-link-close');
 
   // show profile texts
   $('#profile-name').toggle();
