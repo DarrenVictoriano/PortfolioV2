@@ -319,7 +319,7 @@ Media CSS ------------------
       display: block;
   }
   .nav-link-icon.toggled {
-      float: left;
+      float: right;
       padding-top: 5px;
       margin-left: 20px;
   }
