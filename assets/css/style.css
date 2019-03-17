@@ -163,15 +163,16 @@ Main Content CSS
 }
 
 #projects {
-  background-color: #eeeeee;
+  background-color: #f8f9fa;
 }
 
 #skills {
-  background-color: #ffffff;
+  background-color: #1864ab;
 }
 
 #contact {
-  background-color: #eeeeee;
+  background-color: #12b886;
+  color: #fff;
 }
 
 #footer {
@@ -179,6 +180,11 @@ Main Content CSS
   background-image: url('../images/banner-mountain-foot.png');
   background-size: cover;
   color: #ffffff;
+}
+
+.skills {
+  font-size: 4em;
+  color: #fff;
 }
 
 /*
