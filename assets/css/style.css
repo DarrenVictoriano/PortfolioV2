@@ -150,10 +150,10 @@ Main Content CSS
   font: bold 6em Sans-Serif;
   color: #222629;
   opacity: 0.8;
-  text-shadow: 
-     1px  1px     #fff, 
-    -1px  1px     #fff, 
-     1px -1px     #fff, 
+  text-shadow:
+     1px  1px     #fff,
+    -1px  1px     #fff,
+     1px -1px     #fff,
     -1px -1px     #fff,
      1px  1px 5px #555;
 }
@@ -183,7 +183,7 @@ Main Content CSS
 }
 
 .skills {
-  font-size: 4em;
+  font-size: 2em;
   color: #fff;
 }
 
@@ -282,19 +282,19 @@ Media CSS ------------------
   #about.toggled {
     opacity: 0.2;
   }
-  
+
   #projects.toggled {
     opacity: 0.2;
   }
-  
+
   #skills.toggled {
     opacity: 0.2;
   }
-  
+
   #contact.toggled {
     opacity: 0.2;
   }
-  
+
   #footer.toggled {
     opacity: 0.2;
   }
@@ -302,7 +302,7 @@ Media CSS ------------------
 } /* End of Media 960px */
 
 @media screen and (max-width: 500px) {
-  
+
   #fullpage {
       font-size: 14px;
   }
