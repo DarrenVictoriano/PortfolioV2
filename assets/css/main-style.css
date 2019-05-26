@@ -1,0 +1,354 @@
+/*
+Global Styles CSS
+*/
+body {
+  background: #222629;
+}
+.averia-cursive-font {
+  font-family: 'Averia Sans Libre', cursive;
+}
+
+.quicksand-font {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.alegreya-font {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.source-pro-font {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*
+Sidebar CSS ------------------
+*/
+#sidebar-header {
+  background: #222629;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 300px;
+}
+
+/* Sidebar Top */
+#profile-name {
+  font-family: 'Averia Sans Libre', cursive;
+  font-size: 1.7em;
+}
+
+#sidebarCollapse {
+  /* show this when toggled */
+  display: none;
+}
+
+#sidebar-profile {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+#profile-description {
+  font-size: 0.9em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#profile-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 15%;
+  border: solid 1px white;
+}
+
+/* Sidebar Navigations */
+#sidebar-nav ul {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17pt;
+  list-style-type: none;
+  padding-left: 0;
+}
+#sidebar-nav ul li {
+  min-height: 2em;
+}
+
+#sidebar-nav ul li a {
+  border: 0;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  outline: 0;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  text-decoration: none;
+  transition: none;
+}
+
+#sidebar-nav ul li a.active {
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+  color: #fff;
+}
+
+.nav-link-icon {
+  float: right;
+  padding-top: 5px;
+  margin-left: 30px;
+}
+
+#sidebar-nav ul li a.active div {
+  color: #e6e6e6;
+}
+/* Sidebar Bottom */
+#sidebar-bottom ul li {
+  display: inline-block;
+}
+
+.social-img {
+  width: 40px;
+  height: 40px;
+  background-color: #333333;
+  border: solid 2px grey;
+  border-radius: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-img:hover,
+.social-img:focus {
+  border: solid 2px white;
+}
+
+/*
+Main Content CSS
+*/
+#fullpage {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin-left: 300px;
+  transition: all 0.5s ease;
+}
+
+#home {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../img/banner-mountain.png');
+  background-size: cover;
+}
+
+#home2 {
+  background-color: #ffffff;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#home2-name {
+  font: bold 6em Sans-Serif;
+  color: #222629;
+  opacity: 0.8;
+  text-shadow:
+     1px  1px     #fff,
+    -1px  1px     #fff,
+     1px -1px     #fff,
+    -1px -1px     #fff,
+     1px  1px 5px #555;
+}
+
+#about {
+  background-color: #ffffff;
+}
+
+#projects {
+  background-color: #f8f9fa;
+}
+
+#skills {
+  background-color: #1864ab;
+}
+
+#contact {
+  background-color: #12b886;
+  color: #fff;
+}
+
+#footer {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../img/banner-mountain-foot.png');
+  background-size: cover;
+  color: #ffffff;
+}
+
+.skills {
+  font-size: 1em;
+  color: #fff;
+}
+
+/*
+Media CSS ------------------
+*/
+
+@media screen and (max-width: 960px) {
+  /* Sidebar Header */
+  #profile-name,
+  #profile-description {
+      display: none;
+  }
+  #profile-img-div {
+      padding:0;
+      margin: auto;
+      margin-bottom: 1em;
+  }
+  #profile-img {
+      height: 40px;
+      width: 40px;
+      transition: all 0.5s linear;
+  }
+  /* Collape Icon */
+  #sidebarCollapse {
+      display: block;
+  }
+  /* Navigation Link */
+  #sidebar-nav ul li a {
+      padding: 0;
+  }
+  .nav-link-text {
+      display: none;
+  }
+  .nav-link-icon {
+      float: right;
+      margin: 0;
+      margin-right: 15px;
+      padding: 0;
+  }
+  /* Social Image */
+  .social-img {
+      margin: auto;
+      margin-top: 10px;
+      transition: all 0.3s ease-in-out;
+  }
+  /* sidebar and fullpage DIV */
+  #sidebar-header {
+      transition: width 0.5s linear;
+      width: 55px;
+  }
+  #fullpage {
+      font-size: 18px;
+      margin-left: 55px;
+      transition: all 0.5s linear;
+  }
+
+  /* ---------- toggled class ---------- */
+  /* Sidebar Header */
+  #profile-img-div.toggled {
+      padding:0;
+      margin: 0;
+  }
+  #profile-img.toggled {
+      height: 80px;
+      width: 80px;
+      transition: all 0.5s linear;
+  }
+  /* Navigation Link */
+  #sidebar-nav ul li a.toggled {
+      padding: 0.5em 1.5em 0.5em 1.5em;
+  }
+  .nav-link-text.toggled {
+      display: block;
+  }
+  .nav-link-icon.toggled {
+      float: right;
+      padding-top: 5px;
+      margin-left: 20px;
+  }
+  /* Sidebar and main container DIV */
+  #sidebar-header.toggled {
+      width: 300px;
+  }
+  #fullpage.toggled {
+    margin-left: 300px;
+    transition: all 0.5s ease-in-out;
+  }
+  /* Dimmer */
+  #home.toggled {
+    opacity: 0.2;
+  }
+  #home2.toggled {
+    opacity: 0.2;
+  }
+  #about.toggled {
+    opacity: 0.2;
+  }
+
+  #projects.toggled {
+    opacity: 0.2;
+  }
+
+  #skills.toggled {
+    opacity: 0.2;
+  }
+
+  #contact.toggled {
+    opacity: 0.2;
+  }
+
+  #footer.toggled {
+    opacity: 0.2;
+  }
+
+} /* End of Media 960px */
+
+@media screen and (max-width: 500px) {
+
+  #fullpage {
+      font-size: 14px;
+  }
+  #profile-name {
+    font-size: 16px;
+  }
+  #profile-description {
+    font-size: 9px;
+  }
+
+  /* ---------- toggled class ---------- */
+  /* Sidebar Header */
+  #profile-img-div.toggled {
+      padding:0;
+      margin: 0;
+  }
+  #profile-img.toggled {
+      height: 50px;
+      width: 50px;
+      transition: all 0.5s linear;
+  }
+  /* Navigation Link */
+  #sidebar-nav ul li a.toggled {
+      padding: 0.5em 1.5em 0.5em 1.5em;
+      font-size: 15px;
+  }
+  .nav-link-text.toggled {
+      display: block;
+  }
+  .nav-link-icon.toggled {
+      float: right;
+      padding-top: 5px;
+      margin-left: 20px;
+  }
+  /* Sidebar and main container DIV */
+  #sidebar-header.toggled {
+      width: 200px;
+  }
+  #fullpage.toggled {
+    margin-left: 200px;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+  }
+  /* Dimmer */
+  #home.toggled {
+    opacity: 0.2;
+  }
+}
