@@ -20,8 +20,10 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- MDB -->
     <link rel="stylesheet" href="./assets/css/mdb.min.css">
+
     <!-- Fullpage CSS -->
     <link rel="stylesheet" href="./assets/css/fullpage.css">
 
@@ -55,7 +57,7 @@
                     <nav class="navbar navbar-expand-lg navbar-light pr-0">
                         <div class="container-fluid pr-2">
 
-                            <button type="button" id="sidebarCollapse" class="btn btn-light">
+                            <button type="button" id="scBTN" class="btn btn-light m-0 fix-pad">
                                 <i class="fas fa-bars"></i>
                             </button>
 
@@ -109,7 +111,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" id="contact-link">
+                        <a href="mailto:darren.victoriano@gmail.com" id="contact-link">
                             <div title="Contact" class="fas fa-envelope nav-link-icon">
                             </div>
                             <span class="nav-link-text">Contact</span>
@@ -147,242 +149,321 @@
     <!-- Main Container -->
     <div id="fullpage">
 
-        <!-- Home and Cover Image DIV -->
-        <div id="home" class="section active text-center" data-anchor="page1">
-
+        <!-- Paralax Image -->
+        <div id="home" data-speed="100" class="view jarallax" style="height: 100vh;" data-anchor="page1">
+            <img class="jarallax-img" src="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg" alt="">
+            <div class="mask rgba-blue-slight">
+                <div class="container flex-center text-center">
+                    <div class="row mt-5">
+                        <div class="col-md-12 wow fadeIn mb-3">
+                            <h1 class="display-3 mb-2 wow fadeInDown" data-wow-delay="0.3s">Darren <a
+                                    class="indigo-text font-weight-bold">Victoriano</a></h1>
+                            <h5 class="text-uppercase mb-3 mt-1 font-weight-bold wow fadeIn" data-wow-delay="0.4s">
+                                Full Stack Developer & SQA Engineer
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Paralax Image -->
 
-        <!-- About DIV -->
-        <div id="about" class="section p-3 text-center" data-anchor="page2">
-            <h2 class="mb-5">Who am I?</h2>
-            <p class="mx-4">
-                Darren is a Full-Stack Software Engineer and an experienced Software Quality Assurance Engineer. He is
-                always
-                interested
-                in a challenge. Its one of the reason why he
-                became a computer scientist, he likes turning an idea into a software that helps him or other people.
-            </p>
-            <p class="mx-4">
-                His hunger for knowledge and determination to turn information into action led him to his success as
-                being a
-                computer
-                scientist. He consider himself a 'forever-student', eager to improve his understanding in computer
-                programming and at the same time stay tune with the latest technology the world can provide.
-            </p>
+        <!-- Container Text -->
+        <div id="about" class="container-fluid">
+            <!--Grid row-->
+            <div class="row mb-5 pb-4">
+                <!--Grid column-->
+                <div class="col-md-12 text-center">
 
+                    <h2 class="h1 font-weight-bold light-blue-text my-5 py-4">
+                        Who is Darren?
+                    </h2>
+                    <p align="justify">
+                        Darren is a Full-Stack Software Engineer and an experienced Software Quality Assurance
+                        Engineer. He is
+                        always
+                        interested
+                        in a challenge. Its one of the reason why he
+                        became a computer scientist, he likes turning an idea into a software that helps him or
+                        other people.
+                    </p>
+                    <p align="justify">
+                        His hunger for knowledge and determination to turn information into action led him to his
+                        success as
+                        being a
+                        computer
+                        scientist. He consider himself a 'forever-student', eager to improve his understanding in
+                        computer
+                        programming and at the same time stay tune with the latest technology the world can provide.
+                    </p>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
         </div>
+        <!-- Container Text -->
 
-        <!-- Projects DIV -->
-        <div id="projects" class="section p-3 text-center" data-anchor="page3">
-            <h2 class="mb-5">Projects</h2>
-            <p class="mx-4">
-                Coming soon...
-            </p>
+        <!-- Paralax Image -->
+        <div data-speed="100" class="view jarallax" data-anchor="page2">
+            <img class="jarallax-img" src="http://mdbootstrap.com/img/Photos/Others/nature4.jpg" alt="">
+            <div class="mask rgba-blue-slight">
+                <div class="container flex-center text-center">
+                    <div class="row mt-5">
+                        <div class="col-md-12 wow fadeIn mb-3">
+                            <h1 class="display-3 mb-2 wow fadeInDown" data-wow-delay="0.3s">
+                                Project
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Paralax Image -->
 
-        <!-- Skills DIV -->
-        <div id="skills" class="section p-3 text-left pb-5" data-anchor="page4">
+        <!-- Container Text -->
+        <div id="projects" class="container-fluid">
+            <!--Grid row-->
+            <div class="row mb-5 pb-4">
+                <!--Grid column-->
+                <div class="col-md-12 text-center">
+                    <h1 class="my-5 py-4">
+                        asd
+                    </h1>
+                    <p class="mx-4">
+                        Coming soon...
+                    </p>
 
-            <!-- Header -->
-
-            <!-- Content -->
-            <h3 class="text-white text-center pt-5">
-                Progamming Language
-            </h3>
-            <div class="row mt-4 px-5">
-
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class="fab fa-js-square" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
-                        JavaScript
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 90%"></div>
-                    </div>
                 </div>
+                <!--Grid column-->
+
             </div>
-
-            <div class="row mt-4 px-5">
-
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class="devicon-python-plain" data-toggle="tooltip" data-placement="top" title="Python"></i>
-                        Python
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 px-5">
-
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class="devicon-java-plain" data-toggle="tooltip" data-placement="top" title="Java"></i>
-                        Java
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 70%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="text-white text-center mt-5">
-                JavaScript Framework
-            </h3>
-
-            <div class="row mt-4 px-5">
-
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class="devicon-nodejs-plain" data-toggle="tooltip" data-placement="top" title="Node.js"></i>
-                        Node.js
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 90%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 px-5">
-
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class="devicon-express-original" data-toggle="tooltip" data-placement="top"
-                            title="Express.js"></i>
-                        Express.js
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 px-5">
-
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class=" devicon-react-original" data-toggle="tooltip" data-placement="top"
-                            title="React.js"></i>
-                        React.js
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 70%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 px-5">
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class=" devicon-sequelize-plain" data-toggle="tooltip" data-placement="top"
-                            title="Sequelize.js"></i>
-                        Sequelize.js
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 px-5">
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class=" devicon-mongodb-plain" data-toggle="tooltip" data-placement="top"
-                            title="MongoDB"></i>
-                        Mongoose.js
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="text-white text-center mt-5">
-                Database
-            </h3>
-
-            <div class="row mt-4 px-5">
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class=" devicon-mysql-plain" data-toggle="tooltip" data-placement="top" title="MySQL"></i>
-                        MySQL
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 px-5">
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class=" devicon-mongodb-plain" data-toggle="tooltip" data-placement="top"
-                            title="MongoDB"></i>
-                        MongoDB
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="text-white text-center mt-5">
-                Others
-            </h3>
-
-            <div class="row mt-4 px-5">
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class=" devicon-git-plain" data-toggle="tooltip" data-placement="top" title="Git"></i>
-                        Git
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 px-5 mb-5">
-                <div class="text-left col-12 px-2">
-                    <span class="skills ">
-                        <i class=" devicon-bootstrap-plain" data-toggle="tooltip" data-placement="top"
-                            title="Bootstrap 4"></i>
-                        Bootstrap
-                    </span>
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 90%"></div>
-                    </div>
-                </div>
-            </div>
-
+            <!--Grid row-->
         </div>
+        <!-- Container Text -->
 
-        <!-- Contact DIV -->
-        <div id="contact" class="section p-3 text-center" data-anchor="page5">
-            <h2 class="mb-5 text-white">Contact Me</h2>
-            <p class="mx-4">
-                The best way to contact me is through my LinkedIn profile, just click the icon on the sidebar but if you
-                must
-                send me an email then click
-                below.
-            </p>
-            <a href="mailto:darren.victoriano@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email
-                Me</a>
+        <!-- Paralax Image -->
+        <div data-speed="100" class="view jarallax" data-anchor="page3">
+            <img class="jarallax-img" src="http://mdbootstrap.com/img/Photos/Others/nature4.jpg" alt="">
+            <div class="mask rgba-blue-slight">
+                <div class="container flex-center text-center">
+                    <div class="row mt-5">
+                        <div class="col-md-12 wow fadeIn mb-3">
+                            <h1 class="display-3 mb-2 wow fadeInDown" data-wow-delay="0.3s">
+                                Skills
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Paralax Image -->
+
+        <!-- Container Text -->
+        <div id="skills" class="container-fluid">
+            <!--Grid row-->
+            <div class="row mb-5 pb-4">
+                <!--Grid column-->
+                <div class="col-md-12 text-center">
+                    <h3 class="text-dark text-center pt-5">
+                        Progamming Language
+                    </h3>
+                    <div class="row mt-4 px-5">
+
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class="fab fa-js-square" data-toggle="tooltip" data-placement="top"
+                                    title="JavaScript"></i>
+                                JavaScript
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 px-5">
+
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class="devicon-python-plain" data-toggle="tooltip" data-placement="top"
+                                    title="Python"></i>
+                                Python
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 px-5">
+
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class="devicon-java-plain" data-toggle="tooltip" data-placement="top"
+                                    title="Java"></i>
+                                Java
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-dark text-center mt-5">
+                        JavaScript Framework
+                    </h3>
+
+                    <div class="row mt-4 px-5">
+
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class="devicon-nodejs-plain" data-toggle="tooltip" data-placement="top"
+                                    title="Node.js"></i>
+                                Node.js
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 px-5">
+
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class="devicon-express-original" data-toggle="tooltip" data-placement="top"
+                                    title="Express.js"></i>
+                                Express.js
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 px-5">
+
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class=" devicon-react-original" data-toggle="tooltip" data-placement="top"
+                                    title="React.js"></i>
+                                React.js
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 px-5">
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class=" devicon-sequelize-plain" data-toggle="tooltip" data-placement="top"
+                                    title="Sequelize.js"></i>
+                                Sequelize.js
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 px-5">
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class=" devicon-mongodb-plain" data-toggle="tooltip" data-placement="top"
+                                    title="MongoDB"></i>
+                                Mongoose.js
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-dark text-center mt-5">
+                        Database
+                    </h3>
+
+                    <div class="row mt-4 px-5">
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class=" devicon-mysql-plain" data-toggle="tooltip" data-placement="top"
+                                    title="MySQL"></i>
+                                MySQL
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 px-5">
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class=" devicon-mongodb-plain" data-toggle="tooltip" data-placement="top"
+                                    title="MongoDB"></i>
+                                MongoDB
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-dark text-center mt-5">
+                        Others
+                    </h3>
+
+                    <div class="row mt-4 px-5">
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class=" devicon-git-plain" data-toggle="tooltip" data-placement="top"
+                                    title="Git"></i>
+                                Git
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 px-5 mb-5">
+                        <div class="text-left col-12 px-2">
+                            <span class="skills ">
+                                <i class=" devicon-bootstrap-plain" data-toggle="tooltip" data-placement="top"
+                                    title="Bootstrap 4"></i>
+                                Bootstrap
+                            </span>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Container Text -->
+
+        <!-- Main layout -->
 
         <!-- Footer -->
         <div id="footer" class="text-center py-5">

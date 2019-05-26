@@ -2,7 +2,7 @@
 Global Styles CSS
 */
 body {
-  background: #222629;
+  background: #fff;
 }
 .averia-cursive-font {
   font-family: 'Averia Sans Libre', cursive;
@@ -44,9 +44,21 @@ Sidebar CSS ------------------
   font-size: 1.7em;
 }
 
-#sidebarCollapse {
+#scBTN {
   /* show this when toggled */
   display: none;
+
+}
+
+.fix-pad {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.fa-bars {
+  width: 14px;
 }
 
 #sidebar-profile {
@@ -159,20 +171,15 @@ Main Content CSS
 }
 
 #about {
-  background-color: #ffffff;
+
 }
 
 #projects {
-  background-color: #f8f9fa;
+
 }
 
 #skills {
-  background-color: #1864ab;
-}
 
-#contact {
-  background-color: #12b886;
-  color: #fff;
 }
 
 #footer {
@@ -184,7 +191,7 @@ Main Content CSS
 
 .skills {
   font-size: 1em;
-  color: #fff;
+  color: #000;
 }
 
 /*
@@ -208,7 +215,7 @@ Media CSS ------------------
       transition: all 0.5s linear;
   }
   /* Collape Icon */
-  #sidebarCollapse {
+  #scBTN {
       display: block;
   }
   /* Navigation Link */

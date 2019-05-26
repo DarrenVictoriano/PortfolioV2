@@ -85,8 +85,11 @@ function clickNavLink(e) {
 // start JS
 $(document).ready(function () {
 
+
+
+
   new fullpage('#fullpage', {
-    anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+    anchors: ['page1', 'page2', 'page3'],
     autoScrolling: false,
     scrollHorizontally: false,
     css3: true,
@@ -97,9 +100,9 @@ $(document).ready(function () {
   // $(window).on('resize', function () { location.reload(); });
 
   // Collapse Button
-  $('#sidebarCollapse').on('click', clickCollapseButton);
+  $('#scBTN').on('click', clickCollapseButton);
 
-  // Navlink 
+  // Navlink
   $('a[href^="#"]').on('click', clickNavLink);
   //auto close navlink
   $(document).on('click', '.nav-link-close', function (e) {
