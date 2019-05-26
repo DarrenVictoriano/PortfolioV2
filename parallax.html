@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- required meta tags-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Darren Victoriano</title>
+
+    <!-- webpage icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icon.png" />
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- Fullpage CSS -->
+    <link rel="stylesheet" href="./assets/css/fullpage.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/css/main-style.css" />
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Averia+Sans+Libre|Quicksand|Source+Sans+Pro"
+        rel="stylesheet">
+</head>
+
+<!-- ######################################################################################################################################################### -->
+
+<body>
+    <!-- this is the main container for the entire sidebar -->
+    <div id="sidebar-header">
+        <!-- Top Part -->
+        <div id="sidebar-top">
+            <!-- Small Sidebar Profile Top -->
+            <div id="sidebar-profile">
+                <!-- Sidebar Toggle -->
+                <div class="d-flex justify-content-end">
+                    <div class="container-fluid pt-3 pr-0 pl-2 text-left">
+                        <h4 id="profile-name">Darren Victoriano</h4>
+                    </div>
+                    <!-- Toggle button -->
+                    <nav class="navbar navbar-expand-lg navbar-light pr-0">
+                        <div class="container-fluid pr-2">
+
+                            <button type="button" id="sidebarCollapse" class="btn btn-light">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                        </div>
+                    </nav>
+                </div>
+                <!-- Sidebar job -->
+                <div id="sidebar-job" class="row m-0 p-0 mt-1">
+                    <div class="row w-100 m-0 p-0">
+                        <!-- My Name and Job Position-->
+                        <div class="col-6 text-right my-auto">
+                            <p id="profile-description" class="font-italic m-0">
+                                Full-Stack Software Engineer and an Experienced SQA Engineer.
+                            </p>
+                        </div>
+                        <!-- My img-->
+                        <div id="profile-img-div" class="">
+                            <img id="profile-img" src="./assets/img/me.jpg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Sidebar Navigation -->
+            <div id="sidebar-nav">
+                <ul class="navigation">
+                    <li>
+                        <a href="#home" id="home-link">
+                            <div title="Home" class="fas fa-home nav-link-icon"></div>
+                            <span class="nav-link-text">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" id="about-link">
+                            <div title="About" class="fas fa-user-tie nav-link-icon">
+                            </div>
+                            <span class="nav-link-text">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" id="projects-link">
+                            <div title="Projects" class="fas fa-th-list nav-link-icon">
+                            </div>
+                            <span class="nav-link-text">Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" id="skills-link">
+                            <div title="Skills" class="fas fa-tools nav-link-icon"></div>
+                            <span class="nav-link-text">Technical Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" id="contact-link">
+                            <div title="Contact" class="fas fa-envelope nav-link-icon">
+                            </div>
+                            <span class="nav-link-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div> <!-- End of sidebar-top -->
+
+        <!-- Bottom Part -->
+        <div id="sidebar-bottom">
+            <ul class="list-inline text-center">
+                <li title="Github">
+                    <a target="_blank" href="https://github.com/DarrenVictoriano">
+                        <img class="social-img" src="./assets/img/github.png">
+                    </a>
+                </li>
+                <li title="Stack Overflow">
+                    <a target="_blank" href="https://stackoverflow.com/users/9407717/darren">
+                        <img class="social-img" src="./assets/img/stackoverflow-black-circle.png">
+                    </a>
+                </li>
+                <li title="LinkedIn">
+                    <a target="_blank" href="https://www.linkedin.com/in/darren-victoriano/">
+                        <img class="social-img" src="./assets/img/linkedin.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- End of sidebar div -->
+
+    <!-- ######################################################################################################################################################### -->
+
+    <!-- Main Container -->
+    <div id="fullpage">
+
+        <!-- Home and Cover Image DIV -->
+        <div id="home" class="section active text-center" data-anchor="page1">
+
+        </div>
+
+        <!-- About DIV -->
+        <div id="about" class="section p-3 text-center" data-anchor="page2">
+            <h2 class="mb-5">Who am I?</h2>
+            <p class="mx-4">
+                Darren is a Full-Stack Software Engineer and an experienced Software Quality Assurance Engineer. He is
+                always
+                interested
+                in a challenge. Its one of the reason why he
+                became a computer scientist, he likes turning an idea into a software that helps him or other people.
+            </p>
+            <p class="mx-4">
+                His hunger for knowledge and determination to turn information into action led him to his success as
+                being a
+                computer
+                scientist. He consider himself a 'forever-student', eager to improve his understanding in computer
+                programming and at the same time stay tune with the latest technology the world can provide.
+            </p>
+
+        </div>
+
+        <!-- Projects DIV -->
+        <div id="projects" class="section p-3 text-center" data-anchor="page3">
+            <h2 class="mb-5">Projects</h2>
+            <p class="mx-4">
+                Coming soon...
+            </p>
+        </div>
+
+        <!-- Skills DIV -->
+        <div id="skills" class="section p-3 text-left pb-5" data-anchor="page4">
+
+            <!-- Header -->
+
+            <!-- Content -->
+            <h3 class="text-white text-center pt-5">
+                Progamming Language
+            </h3>
+            <div class="row mt-4 px-5">
+
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class="fab fa-js-square" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
+                        JavaScript
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-5">
+
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class="devicon-python-plain" data-toggle="tooltip" data-placement="top" title="Python"></i>
+                        Python
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-5">
+
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class="devicon-java-plain" data-toggle="tooltip" data-placement="top" title="Java"></i>
+                        Java
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-white text-center mt-5">
+                JavaScript Framework
+            </h3>
+
+            <div class="row mt-4 px-5">
+
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class="devicon-nodejs-plain" data-toggle="tooltip" data-placement="top" title="Node.js"></i>
+                        Node.js
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-5">
+
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class="devicon-express-original" data-toggle="tooltip" data-placement="top"
+                            title="Express.js"></i>
+                        Express.js
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-5">
+
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class=" devicon-react-original" data-toggle="tooltip" data-placement="top"
+                            title="React.js"></i>
+                        React.js
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-5">
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class=" devicon-sequelize-plain" data-toggle="tooltip" data-placement="top"
+                            title="Sequelize.js"></i>
+                        Sequelize.js
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-5">
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class=" devicon-mongodb-plain" data-toggle="tooltip" data-placement="top"
+                            title="MongoDB"></i>
+                        Mongoose.js
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-white text-center mt-5">
+                Database
+            </h3>
+
+            <div class="row mt-4 px-5">
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class=" devicon-mysql-plain" data-toggle="tooltip" data-placement="top" title="MySQL"></i>
+                        MySQL
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-5">
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class=" devicon-mongodb-plain" data-toggle="tooltip" data-placement="top"
+                            title="MongoDB"></i>
+                        MongoDB
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-white text-center mt-5">
+                Others
+            </h3>
+
+            <div class="row mt-4 px-5">
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class=" devicon-git-plain" data-toggle="tooltip" data-placement="top" title="Git"></i>
+                        Git
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-5 mb-5">
+                <div class="text-left col-12 px-2">
+                    <span class="skills ">
+                        <i class=" devicon-bootstrap-plain" data-toggle="tooltip" data-placement="top"
+                            title="Bootstrap 4"></i>
+                        Bootstrap
+                    </span>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Contact DIV -->
+        <div id="contact" class="section p-3 text-center" data-anchor="page5">
+            <h2 class="mb-5 text-white">Contact Me</h2>
+            <p class="mx-4">
+                The best way to contact me is through my LinkedIn profile, just click the icon on the sidebar but if you
+                must
+                send me an email then click
+                below.
+            </p>
+            <a href="mailto:darren.victoriano@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email
+                Me</a>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="text-center py-5">
+            <div class="container">
+                <span class="m-0">Darren Victoriano</span>
+            </div>
+        </div>
+
+    </div> <!-- end of main-container -->
+
+
+    <!-- ######################################################################################################################################################### -->
+    <!-- JavaScript -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Fullpage JS -->
+    <script src="./assets/js/fullpage.js"></script>
+    <!-- My JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
