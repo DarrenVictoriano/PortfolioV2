@@ -159,15 +159,15 @@ Main Content CSS
 }
 
 #about {
-  background-color: #ffffff;
+  background-color: #eceff1;
 }
 
 #projects {
-  background-color: #f8f9fa;
+  background-color: #cfd8dc;
 }
 
 #skills {
-  background-color: #1864ab;
+  background-color: #b0bec5;
 }
 
 #contact {
@@ -184,7 +184,7 @@ Main Content CSS
 
 .skills {
   font-size: 1em;
-  color: #fff;
+  color: #000;
 }
 
 /*
