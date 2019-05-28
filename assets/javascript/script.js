@@ -27,6 +27,7 @@ function clickCollapseButton(e) {
 
   // add class to NavLink when viewport is small so it closes the sidebar
   $('a[href^="#"]').toggleClass('nav-link-close');
+  $('#contact-link').toggleClass('nav-link-close');
   $('#fullpage').toggleClass('nav-link-close');
 
   // show profile texts
@@ -44,6 +45,7 @@ function clickCollapseButton(e) {
   $('.nav-link-text').toggleClass('toggled');
   $('.nav-link-icon').toggleClass('toggled');
   $('a[href^="#"]').toggleClass('toggled');
+  $('#contact-link').toggleClass('toggled');
 
 }
 
@@ -99,7 +101,7 @@ $(document).ready(function () {
   // Collapse Button
   $('#sidebarCollapse').on('click', clickCollapseButton);
 
-  // Navlink 
+  // Navlink
   $('a[href^="#"]').on('click', clickNavLink);
   //auto close navlink
   $(document).on('click', '.nav-link-close', function (e) {

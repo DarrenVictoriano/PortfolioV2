@@ -136,8 +136,11 @@ Main Content CSS
 
 #home {
   background-color: rgba(0, 0, 0, 0);
-  background-image: url('../images/banner-mountain.png');
+  background-image: url('../images/bg/mountain-tech-top.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #home2 {
@@ -159,15 +162,33 @@ Main Content CSS
 }
 
 #about {
-  background-color: #ffffff;
+  background-color: #424242;
+  background-image: url('../images/bg/motherboard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fafafa;
 }
 
 #projects {
-  background-color: #f8f9fa;
+  background-color: #424242;
+  background-image: url('../images/bg/motherboard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fafafa;
 }
 
 #skills {
-  background-color: #1864ab;
+  background-color: #424242;
+  background-image: url('../images/bg/motherboard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fafafa;
 }
 
 #contact {
@@ -179,12 +200,16 @@ Main Content CSS
   background-color: rgba(0, 0, 0, 0);
   background-image: url('../images/banner-mountain-foot.png');
   background-size: cover;
-  color: #ffffff;
+  color: #fafafa;
 }
 
 .skills {
   font-size: 1em;
-  color: #fff;
+  color: #fafafa;
+}
+
+.opacity {
+  background: rgba(0, 0, 0, 0.3)!important;
 }
 
 /*
